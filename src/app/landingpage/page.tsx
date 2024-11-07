@@ -2,11 +2,10 @@
 
 import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Pill, Activity, MessageSquare, Zap, Moon, Heart, TrendingUp, Droplet, Utensils, Sunrise, Sunset, Thermometer, Brain } from 'lucide-react'
+import { Activity, MessageSquare, Zap, Moon, Heart, TrendingUp, Droplet, Utensils, Brain, Thermometer } from 'lucide-react'
 
 const generateChartData = (count = 24) => {
   return Array.from({ length: count }, (_, i) => ({
@@ -79,16 +78,16 @@ export default function LandingPage() {
                 <h2 className="text-lg font-semibold mb-4 text-[#74B9FF]">Kris.AI Health Assistant</h2>
                 <div className="flex-grow overflow-y-auto space-y-4 mb-4">
                   <div className="bg-[#1E293B] text-white p-3 rounded-lg max-w-[80%]">
-                    Hi! I'm Kris.AI, your personal health guardian. How are you feeling today?
+                    Hi! I&apos;m Kris.AI, your personal health guardian. How are you feeling today?
                   </div>
                   <div className="bg-[#2C3E50] text-white p-3 rounded-lg max-w-[80%] ml-auto">
-                    I've been feeling more tired than usual lately, and I'm having trouble sleeping.
+                    I&apos;ve been feeling more tired than usual lately, and I&apos;m having trouble sleeping.
                   </div>
                   <div className="bg-[#1E293B] text-white p-3 rounded-lg max-w-[80%]">
-                    I'm sorry to hear that you're experiencing fatigue and sleep issues. Let's take a look at your recent hormone levels and sleep patterns. Have you noticed any changes in your diet or stress levels recently?
+                    I&apos;m sorry to hear that you&apos;re experiencing fatigue and sleep issues. Let&apos;s take a look at your recent hormone levels and sleep patterns. Have you noticed any changes in your diet or stress levels recently?
                   </div>
                   <div className="bg-[#2C3E50] text-white p-3 rounded-lg max-w-[80%] ml-auto">
-                    Now that you mention it, I've been under more stress at work lately, and I've been skipping meals more often.
+                    Now that you mention it, I&apos;ve been under more stress at work lately, and I&apos;ve been skipping meals more often.
                   </div>
                   <div className="bg-[#1E293B] text-white p-3 rounded-lg max-w-[80%]">
                     Thank you for sharing that information. Increased stress and irregular eating habits can definitely impact your energy levels and sleep quality. I've analyzed your data, and it seems your cortisol levels are slightly elevated, which can be related to stress. Let's work on a plan to manage your stress and improve your sleep hygiene. Would you like some personalized recommendations?
